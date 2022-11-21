@@ -1,0 +1,25 @@
+BoxLayoutExample:  #Name of the layout 
+
+
+<BoxLayoutExample>:        # Add wodgets inside the box layout
+    orientation: "vertical"
+    Button:
+        text: "Button 1"
+        size_hint: 0.4, None  # 80% of width , default height from original 100% size 
+        pos_hint: {"center_y": 0.5, "x":0.2}
+    
+             
+    Button:
+        text: "Button 2"
+        size_hint: 0.2, None    # 20% width , 60% height
+        pos_hint: {"right":0.6}  
+    # Changing the button using height and width but Note size_hint : None, None
+    Button:
+        text: "Button 3" 
+        size_hint: None, None
+        # size: "100dp", "100dp"  or 
+        width: "60dp"
+        height: "40dp"
+        pos_hint: {"right": 0.5}  
+
+        
